@@ -1,26 +1,26 @@
-import axios from 'axios'
+import api from './api'
 
 const BASE = '/api/articles'
 
 export const articleService = {
   getAll: (category) => {
     const params = category ? { category } : {}
-    return axios.get(BASE, { params }).then(r => r.data)
+    return api.get(BASE, { params }).then(r => r.data)
   },
 
   getById: (id) => {
-    return axios.get(`${BASE}/${id}`).then(r => r.data)
+    return api.get(`${BASE}/${id}`).then(r => r.data)
   },
 
   create: (data) => {
-    return axios.post(BASE, data).then(r => r.data)
+    return api.post(BASE, data).then(r => r.data)
   },
 
   update: (id, data) => {
-    return axios.put(`${BASE}/${id}`, data).then(r => r.data)
+    return api.put(`${BASE}/${id}`, data).then(r => r.data)
   },
 
   remove: (id) => {
-    return axios.delete(`${BASE}/${id}`)
+    return api.delete(`${BASE}/${id}`)
   }
 }
