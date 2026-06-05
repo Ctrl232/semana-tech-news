@@ -1,6 +1,6 @@
 # Semana Tech News 📰
 
-Portal de noticias Full Stack desarrollado como prueba técnica para Revista Semana.
+Portal de noticias Full Stack.
 
 ## Tecnologías
 
