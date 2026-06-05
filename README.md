@@ -38,27 +38,28 @@ Portal de noticias Full Stack desarrollado como prueba técnica.
 - ├── repository/
 - │   └── ArticleRepository.java
 - └── service/
--     └── ArticleService.java
+- └── ArticleService.java
 
 ## Crear el proyecto Spring Boot (Backend)
 Ve a start.spring.io
-- Abre en el navegador: https://start.spring.io
-- Configura así:
-- Campo         Valor
-- Project       Maven
-- Language      Java
-- Spring Boot   3.2.x (la más reciente estable)
-- Group         com.semana
-- Artifact      news-api
-- Name          news-api
-- Packaging     Jar
-- Java          17
+Abre en el navegador: https://start.spring.io
+Configura así:
+| Campo | Valor |
+| :---  | ---:  |
+| Project | Maven |
+| Language | Java |
+| Spring Boot | 3.2.x (la más reciente estable) |
+| Group | com.semana | 
+| Artifact | news-api |
+| Name | news-api |
+| Packaging | Jar |
+| Java | 17 |
 
-- ➡️  Dependencias — agrega estas 4:
-- ✅ Spring Web
-- ✅ Spring Data JPA
-- ✅ H2 Database
-- ✅ Lombok
+Dependencias — agrega estas 4:
+- Spring Web
+- Spring Data JPA
+- H2 Database
+- Lombok
 
 ## Crear el proyecto React (Frontend)
 - npm create vite@latest frontend -- --template react
@@ -75,7 +76,7 @@ mkdir -p src/pages src/components src/services src/hooks
 ## Cómo ejecutar 
 **Backend:**
 cd backend
-- mvn spring-boot:run
+mvn spring-boot:run
 **Frontend:**
 cd frontend
-- npm run dev
+npm run dev
