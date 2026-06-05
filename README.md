@@ -41,9 +41,7 @@ Portal de noticias Full Stack desarrollado como prueba técnica.
 - └── ArticleService.java
 
 ## Crear el proyecto Spring Boot (Backend)
-Ve a start.spring.io
-Abre en el navegador: https://start.spring.io
-Configura así:
+Ve a start.spring.io abre en el navegador: https://start.spring.io y configura así:
 | Campo | Valor |
 | :---  | ---:  |
 | Project | Maven |
@@ -74,9 +72,9 @@ Borra los archivos
 mkdir -p src/pages src/components src/services src/hooks
 
 ## Cómo ejecutar 
-**Backend:**
+- **Backend:**
 cd backend
 mvn spring-boot:run
-**Frontend:**
+- **Frontend:**
 cd frontend
 npm run dev
